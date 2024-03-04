@@ -13,6 +13,12 @@
 
 The objective of this competition is to create a bot that is the best at guessing words in a game of hangman.
 
+## Setup
+
+Install the following Python packages:
+
+- `nltk` - provides a dictionary of words
+
 ## Scripts
 
 Run the game an amount of times choosing random words for the bot to guess:
@@ -25,6 +31,37 @@ Run the game with a user-promted word for the bot to guess:
 
 ```console
 python run_user_prompted_word_game.py
+```
+
+Example:
+
+```
+Word for the bot to guess is:  octolateral
+2024-03-04 16:22:21,868 - INFO - ❌ Player guessed z, which is not in the word. 8 remaining mistakes.
+2024-03-04 16:22:21,868 - INFO - Revealed word: ___________
+2024-03-04 16:22:21,874 - INFO - 🎉 Player guessed a, which is in the word 2 times!
+2024-03-04 16:22:21,874 - INFO - Revealed word: _____a___a_
+2024-03-04 16:22:21,874 - INFO - ❌ Player guessed g, which is not in the word. 7 remaining mistakes.
+2024-03-04 16:22:21,874 - INFO - Revealed word: _____a___a_
+2024-03-04 16:22:21,874 - INFO - ❌ Player guessed x, which is not in the word. 6 remaining mistakes.
+2024-03-04 16:22:21,874 - INFO - Revealed word: _____a___a_
+2024-03-04 16:22:21,874 - INFO - 🎉 Player guessed r, which is in the word 1 times!
+2024-03-04 16:22:21,874 - INFO - Revealed word: _____a__ra_
+2024-03-04 16:22:21,874 - INFO - ❌ Player guessed n, which is not in the word. 5 remaining mistakes.
+2024-03-04 16:22:21,874 - INFO - Revealed word: _____a__ra_
+2024-03-04 16:22:21,874 - INFO - ❌ Player guessed h, which is not in the word. 4 remaining mistakes.
+2024-03-04 16:22:21,874 - INFO - Revealed word: _____a__ra_
+2024-03-04 16:22:21,874 - INFO - 🎉 Player guessed e, which is in the word 1 times!
+2024-03-04 16:22:21,874 - INFO - Revealed word: _____a_era_
+2024-03-04 16:22:21,874 - INFO - ❌ Player guessed b, which is not in the word. 3 remaining mistakes.
+2024-03-04 16:22:21,874 - INFO - Revealed word: _____a_era_
+2024-03-04 16:22:21,874 - INFO - ❌ Player guessed j, which is not in the word. 2 remaining mistakes.
+2024-03-04 16:22:21,874 - INFO - Revealed word: _____a_era_
+2024-03-04 16:22:21,874 - INFO - ❌ Player guessed i, which is not in the word. 1 remaining mistakes.
+2024-03-04 16:22:21,874 - INFO - Revealed word: _____a_era_
+2024-03-04 16:22:21,874 - INFO - ❌ Player guessed v, which is not in the word. 0 remaining mistakes.
+2024-03-04 16:22:21,874 - INFO - Revealed word: _____a_era_
+2024-03-04 16:22:21,874 - WARNING - Bot has lost!
 ```
 
 ## Competition Instructions
