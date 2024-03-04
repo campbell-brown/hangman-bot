@@ -1,0 +1,31 @@
+name: Development Pipeline
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - '**'
+  push:
+    branches:
+      - main
+
+
+jobs:
+  formatting:
+    name: Formatting
+    runs-on: ubuntu-latest
+
+    container:
+      image: bduncanltd/checking_py3:0.4
+      # This must be root user or 1001 to allow checkout permissions.
+      # See https://github.com/actions/checkout/issues/211#issuecomment-680107607.
+      options: --user 1001
+
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+
+      - name: Check formatting
+        run: |
+          python format.py
+          git diff --exit-code
