@@ -20,6 +20,7 @@ class Bot:
         """
         raise NotImplementedError("Subclasses must implement this method.")
 
+
 class DumbBot(Bot):
     """A dumb bot that guesses letters at random from the available letters."""
 
@@ -31,5 +32,6 @@ class DumbBot(Bot):
 
     def choose_letter(self, available_letters: str, revealed_word: str, remaining_allowed_mistakes: int) -> str:
         return random.choice(available_letters)
+
 
 # TODO: Add your bot here!

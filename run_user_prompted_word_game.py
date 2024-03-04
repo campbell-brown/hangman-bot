@@ -1,4 +1,5 @@
 """Prompts the user to choose a word and gets the bot to guess it."""
+
 import logging
 import sys
 

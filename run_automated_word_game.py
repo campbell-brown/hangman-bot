@@ -1,4 +1,5 @@
 """Generates a random word from the list of available words and gets the bot to guess it."""
+
 import logging
 import random
 
