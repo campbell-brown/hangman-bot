@@ -4,9 +4,9 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Run Automated Word Game (1000 times)",
+            "label": "Run Automated Word Game",
             "type": "shell",
-            "command": "python run_automated_word_game.py --times 1000",
+            "command": "python run_automated_word_game.py",
             "group": "build",
             "problemMatcher": [],
         },

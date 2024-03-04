@@ -37,12 +37,12 @@ class HangmanGame:
                 [char if char == letter or char in self.revealed_word else "_" for char in self.word_to_guess]
             )
         else:
+            self.remaining_allowed_mistakes -= 1
             logging.info(
                 "\U0000274C Player guessed %s, which is not in the word. %d remaining mistakes.",
                 letter,
                 self.remaining_allowed_mistakes,
             )
-            self.remaining_allowed_mistakes -= 1
         logging.info("Revealed word: %s", self.revealed_word)
 
     def is_word_guessed_correctly(self):
