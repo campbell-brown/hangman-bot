@@ -4,6 +4,20 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "Run Automated Word Game (1000 times)",
+            "type": "shell",
+            "command": "python run_automated_word_game.py --times 1000",
+            "group": "build",
+            "problemMatcher": [],
+        },
+        {
+            "label": "Run User-Prompted Word Game",
+            "type": "shell",
+            "command": "python run_user_prompted_word_game.py",
+            "group": "build",
+            "problemMatcher": [],
+        },
+        {
             "label": "Format",
             "type": "shell",
             "command": "python format.py",
